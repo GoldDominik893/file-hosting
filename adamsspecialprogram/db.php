@@ -1,12 +1,9 @@
 <?php
-$hostname = "";
-$username = "";
+$hostname = "localhost";
+$username = "root";
 $password = "";
-$database = "";
+$database = "adamsspecialprogram";
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
-
-if ($mysqli->connect_error) {
-  die("Connection failed: " . $mysqli->connect_error);
-}
+$con = mysqli_connect($hostname, $username, $password, $database);
 ?>
